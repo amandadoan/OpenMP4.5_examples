@@ -1,0 +1,153 @@
+Currently Loaded Modulefiles:
+  1) modules/3.2.10.7
+  2) udreg/2.3.2-6.0.6.0_15.18__g5196236.ari
+  3) ugni/6.0.14-6.0.6.0_18.12__g777707d.ari
+  4) gni-headers/5.0.12-6.0.6.0_3.26__g527b6e1.ari
+  5) dmapp/7.1.1-6.0.6.0_51.37__g5a674e0.ari
+  6) xpmem/2.2.14-6.0.6.0_10.1__g34333c9.ari
+  7) llm/21.3.522-6.0.6.0_34.1__ga1a54af.ari
+  8) nodehealth/5.6.3-6.0.6.0_19.1__g74feeca.ari
+  9) slurm/17.11.6-1
+ 10) Base-opts/2.4.131-6.0.6.0_14.1__gd955f55.ari
+ 11) cce/8.7.1.171
+ 12) craype-network-aries
+ 13) craype/2.5.15.2
+ 14) cray-libsci/18.04.1
+ 15) pmi/5.0.14.2
+ 16) rca/2.2.18-6.0.6.0_19.14__g2aa4f39.ari
+ 17) atp/2.1.2.8
+ 18) perftools-base/7.0.2
+ 19) PrgEnv-cray/6.0.5
+ 20) totalview-support/1.2.0.21
+ 21) totalview/2018.0.5
+ 22) cray-mpich/7.7.1.8
+ 23) craype-sandybridge
+ 24) cray-libsci_acc/18.03.1
+ 25) cudatoolkit/9.0.103_3.8-6.0.6.0_5.1__ge5a6a6f
+ 26) craype-accel-nvidia35
+ 27) perftools-lite
+CrayPat/X:  Version 7.0.2 Revision a975333  05/16/18 15:54:03
+ Hello World from accelerator!
+ Finished execution!
+
+#################################################################
+#                                                               #
+#            CrayPat-lite Performance Statistics                #
+#                                                               #
+#################################################################
+
+CrayPat/X:  Version 7.0.2 Revision a975333  05/16/18 15:54:03
+Experiment:                  lite  lite/sample_profile
+Number of PEs (MPI ranks):      1
+Numbers of PEs per Node:        1
+Numbers of Threads per PE:      2
+Number of Cores per Socket:    12
+Execution start time:  Mon May 21 14:37:44 2018
+System name and speed:  nid00024  2.401 GHz (nominal)
+Intel Ivy Bridge CPU  Family:  6  Model: 62  Stepping:  4
+DRAM:  32 GiB DDR3-1866 on 2.4 GHz nodes
+
+
+
+Avg Process Time:             0.45 secs             
+High Memory:                  63.1 MiBytes     63.1 MiBytes per PE
+Observed CPU clock boost:    123.3 %          
+Percent cycles stalled:       15.9 %          
+Instr per Cycle:              1.68
+I/O Read Rate:            0.267736 MiBytes/sec      
+I/O Write Rate:           2.245395 MiBytes/sec      
+
+Table 1:  Profile by Function
+
+  Samp% | Samp | Imb. |  Imb. | Group
+        |      | Samp | Samp% |  Function=[MAX10]
+        |      |      |       |   Thread=HIDE
+       
+ 100.0% | 24.0 |   -- |    -- | Total
+|------------------------------------------------------
+| 100.0% | 24.0 |   -- |    -- | ETC
+||-----------------------------------------------------
+||  75.0% | 18.0 |   -- |    -- | cuVDPAUCtxCreate
+||   8.3% |  2.0 |   -- |    -- | exit
+||   4.2% |  1.0 | 13.5 | 96.4% | cuEGLInit
+||   4.2% |  1.0 |   -- |    -- | elf_size
+||   4.2% |  1.0 |   -- |    -- | cudbgApiDetach
+||   4.2% |  1.0 |   -- |    -- | __strcmp_sse2_unaligned
+|======================================================
+
+Table 2:  Profile by Group, Function, and Line
+
+  Samp% | Samp | Imb. |  Imb. | Group
+        |      | Samp | Samp% |  Function=[MAX10]
+        |      |      |       |   Source
+        |      |      |       |    Line
+        |      |      |       |     Thread=HIDE
+       
+ 100.0% | 24.0 |   -- |    -- | Total
+|------------------------------------------------------
+| 100.0% | 24.0 |   -- |    -- | ETC
+||-----------------------------------------------------
+||  75.0% | 18.0 |   -- |    -- | cuVDPAUCtxCreate
+||   8.3% |  2.0 |   -- |    -- | exit
+||   4.2% |  1.0 | 13.5 | 96.4% | cuEGLInit
+||   4.2% |  1.0 |   -- |    -- | elf_size
+||   4.2% |  1.0 |   -- |    -- | cudbgApiDetach
+||   4.2% |  1.0 |   -- |    -- | __strcmp_sse2_unaligned
+|======================================================
+
+===================  Observations and suggestions  ===================
+
+
+MPI utilization:
+
+    No suggestions were made because each node has only one rank.
+
+=========================  End Observations  =========================
+
+Table 3:  Program energy and power usage (from Cray PM)
+
+   Node |     Node |  Accel |    Accel |  Process | Thread=HIDE
+ Energy |    Power | Energy |    Power |     Time | 
+    (J) |      (W) |    (J) |      (W) |          | 
+       
+     41 |   90.164 |      9 |   19.792 | 0.454727 | Total
+
+Table 4:  File Input Stats by Filename
+
+     Read |     Read |   Read Rate | Reads | Bytes/ | File Name=!x/^/(proc|sys)/
+     Time |  MiBytes | MiBytes/sec |       |   Call | 
+         
+ 0.000018 | 0.000005 |    0.267736 |   5.0 |   1.00 | Total
+|-----------------------------------------------------------------------------
+| 0.000018 | 0.000005 |    0.267736 |   5.0 |   1.00 | _pipe_read_
+|=============================================================================
+
+Table 5:  File Output Stats by Filename
+
+    Write |    Write |  Write Rate | Writes | Bytes/ | File Name[max15]
+     Time |  MiBytes | MiBytes/sec |        |   Call | 
+         
+ 0.000042 | 0.000093 |    2.245395 |    9.0 |  10.89 | Total
+|----------------------------------------------------------------------
+| 0.000028 | 0.000005 |    0.168393 |    5.0 |   1.00 | _pipe_write_
+| 0.000012 | 0.000041 |    3.329923 |    2.0 |  21.50 | /proc/job
+| 0.000001 | 0.000048 |   48.116767 |    2.0 |  25.00 | stdout
+|======================================================================
+Program invocation:
+  /lus/scratch/anguyen/fortran_examples/01.hello_world/./hello_world
+
+For a complete report with expanded tables and notes, run:
+  pat_report /lus/scratch/anguyen/fortran_examples/01.hello_world/hello_world+25612-24s
+
+For help identifying callers of particular functions:
+  pat_report -O callers+src /lus/scratch/anguyen/fortran_examples/01.hello_world/hello_world+25612-24s
+To see the entire call tree:
+  pat_report -O calltree+src /lus/scratch/anguyen/fortran_examples/01.hello_world/hello_world+25612-24s
+
+For interactive, graphical performance analysis, run:
+  app2 /lus/scratch/anguyen/fortran_examples/01.hello_world/hello_world+25612-24s
+
+================  End of CrayPat-lite output  ==========================
+real 3.18
+user 0.70
+sys 1.30
