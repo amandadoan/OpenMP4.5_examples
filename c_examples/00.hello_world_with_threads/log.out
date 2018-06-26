@@ -22,18 +22,24 @@ Currently Loaded Modulefiles:
  21) totalview/2018.1.12
  22) cray-mpich/7.7.1
  23) craype-sandybridge
- 24) cray-libsci_acc/18.07.1.1
- 25) cudatoolkit/9.1.85_3.10-6.0.6.1_2.1__gf7a1bfb
+ 24) cudatoolkit/9.1.85_3.10-6.0.6.1_2.1__gf7a1bfb
+ 25) cray-libsci_acc/18.07.1.1
  26) craype-accel-nvidia35
  27) perftools-lite
+Start Execution!
 Hello World from thread = 0
-Hello World from thread = 3
-Hello World from thread = 1
+Number of threads = 4
 Hello World from thread = 2
-Number of threads = 4/nHello World from thread = 0
-Number of threads = 4/nHello World from thread = 2
-Hello World from thread = 3
 Hello World from thread = 1
-real 1.72
-user 0.03
-sys 0.75
+Hello World from thread = 3
+Finished Execution!
+Start Execution!
+Hello World from thread = 0
+Number of threads = 4
+Hello World from thread = 1
+Hello World from thread = 3
+Hello World from thread = 2
+Finished Execution!
+real 1.66
+user 0.00
+sys 0.04

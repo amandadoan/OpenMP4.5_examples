@@ -9,6 +9,8 @@
 ******************************************************************************/
 
 #include <stdio.h>
+#include <omp.h>
+#include <stdlib.h>
 
 int main(int argc, char *argv[])
 {
@@ -27,7 +29,7 @@ int main(int argc, char *argv[])
         if (tid == 0)
         {
             nthreads = omp_get_num_threads();
-            printf("Number of threads = %d/n", nthreads);
+            printf("Number of threads = %d\n", nthreads);
         }
     }
     /* All threads join master thread and disband. */
