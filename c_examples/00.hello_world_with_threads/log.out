@@ -1,0 +1,39 @@
+Currently Loaded Modulefiles:
+  1) modules/3.2.10.7
+  2) udreg/2.3.2-6.0.6.0_15.18__g5196236.ari
+  3) ugni/6.0.14-6.0.6.0_18.12__g777707d.ari
+  4) gni-headers/5.0.12-6.0.6.0_3.26__g527b6e1.ari
+  5) dmapp/7.1.1-6.0.6.0_51.37__g5a674e0.ari
+  6) xpmem/2.2.14-6.0.6.0_10.1__g34333c9.ari
+  7) llm/21.3.522-6.0.6.0_34.1__ga1a54af.ari
+  8) nodehealth/5.6.3-6.0.6.0_19.1__g74feeca.ari
+  9) slurm/17.11.7-1
+ 10) Base-opts/2.4.131-6.0.6.0_14.1__gd955f55.ari
+ 11) cce/8.7.2.33
+ 12) craype-network-aries
+ 13) craype/2.5.16.2
+ 14) cray-libsci/18.04.1
+ 15) pmi/5.0.14
+ 16) rca/2.2.18-6.0.6.0_19.14__g2aa4f39.ari
+ 17) atp/2.1.2
+ 18) perftools-base/7.0.2
+ 19) PrgEnv-cray/6.0.5
+ 20) totalview-support/1.2.0.22
+ 21) totalview/2018.1.12
+ 22) cray-mpich/7.7.1
+ 23) craype-sandybridge
+ 24) cray-libsci_acc/18.07.1.1
+ 25) cudatoolkit/9.1.85_3.10-6.0.6.1_2.1__gf7a1bfb
+ 26) craype-accel-nvidia35
+ 27) perftools-lite
+Hello World from thread = 0
+Hello World from thread = 3
+Hello World from thread = 1
+Hello World from thread = 2
+Number of threads = 4/nHello World from thread = 0
+Number of threads = 4/nHello World from thread = 2
+Hello World from thread = 3
+Hello World from thread = 1
+real 1.72
+user 0.03
+sys 0.75
